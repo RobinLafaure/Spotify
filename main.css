@@ -1,0 +1,376 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    background: #535353;
+    font-family: 'Oswald', sans-serif;
+    /*overflow: hidden;*/
+}
+.block{
+    width: 180px;
+    height: 180px;
+    box-shadow: 0px 0px 16px 7px #181818;
+}
+
+
+
+h1{
+    /*position: absolute;*/
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 120px;
+}
+h3{
+    /*position: absolute;*/
+    font-family: 'Oswald', sans-serif;
+    font-weight: lighter;
+    font-size: 15px;
+}
+.container{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 0px 20px 0px 20px;
+}
+
+.container-singles{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0px 20px 0px 20px;
+ }
+
+.album{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;  
+    background: #181818;
+    padding: 20px;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: background 0.4s ease;
+}
+
+.album:hover{ 
+    
+    background: #535353;
+}
+
+.single{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;  
+    background: #181818;
+    padding: 20px;
+    border-radius: 4px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    transition: background 0.4s ease;
+}
+
+.single:hover{ 
+    
+    background: #535353;
+}
+
+.section-form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: url('https://images.unsplash.com/photo-1478147427282-58a87a120781?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form{
+    position: relative;
+    z-index: 20;
+}
+
+
+img.layer{
+    width: 100vw;
+    height: 100vh;
+}
+#select_genre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+#nom_artist{
+    width: 80%;
+    height: 60px;
+    font-size: 80px;
+}
+
+.texte{
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+    width: 30%;
+}
+
+.entete{
+    width: 40%;
+}
+
+p{
+    text-indent: 40px;
+}
+
+.quote-bas{
+    width: 100%;
+    display: flex;
+    
+    justify-content: flex-end;
+}
+
+.artist_pic{
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    align-items: center;
+    
+}
+
+.artist_name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist_infos{
+    position: relative;
+    background: linear-gradient(#535353, #121212);
+    display: flex;
+    z-index: 0;
+    margin-top: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main{
+    margin-left: 0%;
+    margin-right: 0%;
+    background: #121212;
+}
+
+#back{
+    border-radius: 50%;
+    position: fixed;
+    z-index: 2;
+    width: 60px;
+    height: 60px;
+    margin-top: 2%;
+    margin-left: 2%;
+    background: rgba(00,00,00,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.album_infos{
+    width: 100%;
+    max-width: 180px;
+    height: 100px;
+}
+
+.single_infos{
+    width: 100%;
+    max-width: 180px;
+    height: 100px;
+}
+
+.date_album{
+    text-indent: 0px;
+}
+
+h3{
+    font-size:5rem;
+    margin: 0;
+    padding: 0;
+}
+
+h4{
+    font-size: 60px;
+    padding-left: 30px;
+}
+
+span{
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.name h1{
+    font-size: 120px;
+}
+
+span.fade{
+    opacity: 1;
+}
+
+@media screen and (max-width: 1400px){
+    
+    h1{
+        font-size: 100px;
+    }
+
+    h3{
+        font-size: 4rem;
+    }
+    .name h1{
+        font-size: 100px;
+    }
+    
+}
+
+@media screen and (max-width: 1200px){
+    
+    h1{
+        font-size: 80px;
+    }
+
+    .name h1{
+        font-size: 70px;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+
+    .texte{
+        font-size: 18px;
+        font-family: 'Oswald', sans-serif;
+        width: 25%;
+    }
+
+    
+}
+
+/* ------------------ CHANGEMENT DE DISPLAY------------------*/
+
+@media screen and (max-width: 750px){
+    
+    .section-form{
+        flex-direction: column;
+    }
+
+    .texte{
+        font-size: 20px;
+        font-family: 'Oswald', sans-serif;
+        width: 70%;
+    }
+
+    .entete{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .artist_infos{
+        display: block;
+    }
+
+    .name h1{
+        font-size: 60px;
+    }
+
+    h4{
+        font-size: 40px;
+        padding-left: 30px;
+    }
+
+    
+}
+
+@media screen and (max-width: 550px){
+    
+    h1{
+        font-size: 65px;
+    }
+
+    .name h1{
+        font-size: 50px;
+    }
+
+    h3{
+        font-size: 2.5rem;
+    }
+
+    .texte{
+        font-size: 18px;
+        font-family: 'Oswald', sans-serif;
+        width: 70%;
+    }
+
+    
+}
+
+@media screen and (max-width: 450px){
+    
+    h1{
+        font-size: 55px;
+    }
+
+    .name h1{
+        font-size: 40px;
+    }
+
+    h3{
+        font-size: 1.8rem;
+    }
+
+    .texte{
+        font-size: 15px;
+        font-family: 'Oswald', sans-serif;
+        width: 80%;
+    }
+
+    h4{
+        font-size: 25px;
+        padding-left: 30px;
+    }
+
+    
+}
+
+@media screen and (max-width: 380px){
+    
+    h1{
+        font-size: 50px;
+    }
+
+    .name h1{
+        font-size: 20px;
+    }
+
+    h3{
+        font-size: 1.5rem;
+    }
+
+    .texte{
+        font-size: 12px;
+        font-family: 'Oswald', sans-serif;
+        width: 80%;
+    }
+
+    h4{
+        font-size: 15px;
+        padding-left: 30px;
+    }
+
+    
+}

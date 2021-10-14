@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify Data</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" type="text/css" href="search.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/05c3c60494.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <input type="hidden" id='hidden_token'>
+
+    
+    <div class="section-form" id="section-form">
+        
+
+        <div class="entete">
+
+            <h1 class="moove">Spotify Data.</h1>
+
+            <h3>Here you can search for an artist</h3>
+
+
+            <form onsubmit="" role="search">
+                <label for="search">Search for stuff</label>
+                <input id="search" type="search" placeholder="Search..." autofocus required class="nom_artist"/>
+                <button type="button" onclick="removeInput(),_getArtist(),APPController.init(),addBack()" id="button_principal">Go</button>    
+              </form>
+
+        <!--<form action="" method="get" id="select_genre">
+            
+            <input type="text" name="nom_artist" id="nom_artist" value="" placeholder="">
+            <input type="button" value="Find" onclick="removeInput(),_getArtist(),APPController.init(),addBack()" id="button_principal">
+            
+        
+        </form>-->
+    </div>
+    <div class="texte">
+        <i class="fas fa-quote-left fa-2x"></i>
+        <p>
+            This website is just a way for me to experiment with API calls and design.
+            I only used HTML, CSS and JavaScript in a simple way.
+            I encountered some problems that can be solved with the use of a Framework like View or Angular.
+            This is why following this project I would like to try to learn one of these frameworks. 
+        </p>
+        <div class="quote-bas"> <i class="fas fa-quote-right fa-2x"></i></div>
+       
+    </div>
+</div>
+<div class="main">
+    <div onclick="window.location.reload(false)" style="display: none;" id="back"><div><i class="fas fa-arrow-left fa-3x"></i></div><div></div></div>
+    <div class="artist_infos">
+        <div class="artist_pic">
+
+        </div>
+        
+        <div class="artist_name">
+            
+            
+        </div>
+        
+    </div>
+
+    <div class="album-list" style="display: none"; id="album-list" >
+        <h4>Albums</h4>
+    </div>
+ 
+    <div class="container"> 
+        <!--LISTE DE NOS ALBUM VIA JS-->         
+    </div>
+    <div class="singles-list" style="display: none; margin-top: 10px;"; id="singles-list" >
+        <h4>Singles</h4>
+    </div>
+    <div class="container-singles"> 
+        <!--LISTE DE NOS Singles VIA JS-->         
+    </div>
+
+    
+</div> 
+                       
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="app.js" type="text/javascript" ></script>
+    
+</body>
+</html>

@@ -1,0 +1,39 @@
+{
+  "artists" : {
+    "href" : "https://api.spotify.com/v1/search?query=Hamza&type=artist&offset=0&limit=1",
+    "items" : [ {
+      "external_urls" : {
+        "spotify" : "https://open.spotify.com/artist/5gs4Sm2WQUkcGeikMcVHbh"
+      },
+      "followers" : {
+        "href" : null,
+        "total" : 475427
+      },
+      "genres" : [ "belgian hip hop", "french hip hop", "pop urbaine", "rap belge", "rap francais" ],
+      "href" : "https://api.spotify.com/v1/artists/5gs4Sm2WQUkcGeikMcVHbh",
+      "id" : "5gs4Sm2WQUkcGeikMcVHbh",
+      "images" : [ {
+        "height" : 640,
+        "url" : "https://i.scdn.co/image/ab6761610000e5eb13fd23f6e5b3b9262618279d",
+        "width" : 640
+      }, {
+        "height" : 320,
+        "url" : "https://i.scdn.co/image/ab6761610000517413fd23f6e5b3b9262618279d",
+        "width" : 320
+      }, {
+        "height" : 160,
+        "url" : "https://i.scdn.co/image/ab6761610000f17813fd23f6e5b3b9262618279d",
+        "width" : 160
+      } ],
+      "name" : "Hamza",
+      "popularity" : 74,
+      "type" : "artist",
+      "uri" : "spotify:artist:5gs4Sm2WQUkcGeikMcVHbh"
+    } ],
+    "limit" : 1,
+    "next" : "https://api.spotify.com/v1/search?query=Hamza&type=artist&offset=1&limit=1",
+    "offset" : 0,
+    "previous" : null,
+    "total" : 447
+  }
+}
